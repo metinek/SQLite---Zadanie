@@ -10,8 +10,35 @@
 
             <Label
                 x:Name="wierszeLbl"
-                Text=""/>
+                Text=""
+                HorizontalOptions="Center"/>
 
+            <Image
+                x:Name="pojazdImg"
+                Source="a1.png"
+                WidthRequest="300"/>
+            
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <Button
+                    x:Name="poprzedniBtn"
+                    Text="Poprzedni"
+                    Clicked="OnPoprzedniClicked"/>
+                <Button
+                    x:Name="wybranyBtn"
+                    Text="Wyświetl wybrany"
+                    Clicked="OnWybranyClicked"/>
+                <Button
+                    x:Name="usunBtn"
+                    Text="Usuń wybrany"
+                    Clicked="OnUsunClicked"/>
+                <Button
+                    x:Name="nastepnyBtn"
+                    Text="Następny"
+                    Clicked="OnNastepnyClicked"/>
+
+
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 
